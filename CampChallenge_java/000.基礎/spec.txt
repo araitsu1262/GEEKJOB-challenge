@@ -1,0 +1,3 @@
+CPU：Intel Core i3-5005U
+
+メモリ：4.00GB
