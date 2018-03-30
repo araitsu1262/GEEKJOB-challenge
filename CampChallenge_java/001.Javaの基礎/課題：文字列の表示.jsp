@@ -1,1 +1,1 @@
-<% out.print("Hello world");%>
+<% out.print("Hello world."); %>
