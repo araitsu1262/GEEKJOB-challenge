@@ -20,7 +20,7 @@ public class method2 extends HttpServlet {
      */
     
     void number(int num,PrintWriter pw){
-    
+
         if(num % 2 == 0){pw.print("‹ô”");}
         else{pw.print("Šï”");}
         
