@@ -19,9 +19,9 @@ public class profile extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     
-  String a (String b){
-  
-  return b;
+  String[] a (){
+  String[] data ={"arupaaaaaka1262","1995年5月4日","神奈川県藤沢市亀井野"};
+  return data;
       
   }
             
@@ -30,11 +30,11 @@ public class profile extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
  
-       String[] data ={"arupaaaaaka1262","1995年5月4日","神奈川県藤沢市亀井野"};
+      String[] arr=a();
    
        for(int i=0;i<=2;i++){
            if(i==0){continue;}
-       out.print(a(data[i])+"<br>");
+       out.print(arr[i]+"<br>");
        }
 
          return ;
