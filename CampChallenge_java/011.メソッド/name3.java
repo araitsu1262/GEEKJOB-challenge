@@ -20,28 +20,24 @@ public class name3 extends HttpServlet {
      */
     
     
-  void myprofile(PrintWriter pw) {
+  boolean myprofile(PrintWriter pw) {
 
     pw.print("私は新井佳奈と申します。<br>");
     pw.print("1995年5月4日生まれです。<br>");
     pw.print("趣味はゲームと食べることです。<br><br>");
-        }
-  
-  boolean i(int num){if(num>0){return true;}
-  else{return false;}}
-             
+  return true;     
+  }
+           
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-      
-            myprofile(out);
             
-            if (i(1)){out.print("この処理は正しく実行できました");}
+            if (myprofile(out)){out.print("この処理は正しく実行できました");}
             else{out.print("正しく実行できませんでした");}
             out.print("<br>");
-            if (i(0)){out.print("この処理は正しく実行できました");}
-            else{out.print("正しく実行できませんでした");}
+            
+           
             
         }
     }
