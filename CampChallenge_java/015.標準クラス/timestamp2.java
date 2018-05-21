@@ -18,6 +18,6 @@ class timestamp2 {
         SimpleDateFormat sdf=
           new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
        
-        System.out.print(sdf.format(d));
+        System.out.print(sdf.format(d.getTime()));
     }
 }
