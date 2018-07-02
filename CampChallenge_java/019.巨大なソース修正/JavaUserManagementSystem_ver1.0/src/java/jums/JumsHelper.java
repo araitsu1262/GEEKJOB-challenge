@@ -17,4 +17,5 @@ public class JumsHelper {
     public String home(){
         return "<a href=\""+homeURL+"\">トップへ戻る</a>";
     }
+
 }
